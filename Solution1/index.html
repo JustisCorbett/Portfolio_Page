@@ -2,28 +2,251 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <meta charset="utf-8" />
     <title>Justis Corbett Designs</title>
     <style>
+        
+        body {
+            padding-top: 50px;
+            background-color: black;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+            color: white;
+            position:relative;
+        }
+        .parallax{
+            background-image: url("https://c1.staticflickr.com/6/5541/9467318028_34a77f668b_k.jpg");
+            height: 625px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding:0px;
+            
+        }
+        .parallax2{
+            background-image: url("https://c1.staticflickr.com/8/7354/16239715270_6a40e20337_b.jpg");
+            height: 675px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding:0px;
+        }
+        .parallax3{
+            background-image: url("https://c1.staticflickr.com/4/3742/20176124030_4f30494dc0_b.jpg");
+            height: 700px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding:0px;
+        }
+        .parallax4{
+            background-image: url("https://c1.staticflickr.com/8/7367/27382526164_823330b31f_h.jpg");
+            height: 725px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding:0px;
+        }
+        .navbar {
+            
+        }
         .fancy-font{
+            font-family: "Pacifico", serif;
+            font-weight: 200;
+            font-size: 1.5vw;
+            color: white;
+        }
+        .name-font{
             font-family: "Comfortaa", serif;
-            font-weight: 600;
+            font-weight: 200;
+            font-size: 6vw;
+            color: white;
+            
+        }
+        .motto-font{
+            font-family: "Pacifico", serif;
+            font-weight: 200;
+            font-size: 3vw;
+            color: white;
+            
+        }
+        .about-font{
+            font-family: "Open Sans", serif;
+            font-weight: 200;
+            font-size: 2vw;
+            color: white;
+        }
+        .mainbg{
+            padding: 0px;
+        }
+        
+        .splashbg {
+            
+            height: 650px;
+            padding:0px;
+            
+        }
+        .aboutbg{
+            height: 700px;
+            padding:0px;
+            
+        }
+        .portfoliobg{
+            height: 750px;
+            padding:50px 0px 0px 0px;
+            
+        }
+        .contactbg{
+            height: 700px;
+            padding:0px;
+        }
+        h1 {
+            padding: 0;
+        }
+        .btn-default{
+            background: black;
+            color: white;
+            border-color: black;
+            font-size: 2vw;
+        }
+        .block{
+            background-color: black;
+            
+            opacity: .8;
+            border: 1px solid black;
+            padding: 10px;
+            width: 50%;
+            margin-left:25%;
+            margin-right:25%;
+            margin-top: 15%;
+            margin-bottom: 5%;
+            border-radius: 15px;
+        }
+        .block2{
+            background-color: black;
+            
+            opacity: .8;
+            border: 1px solid black;
+            padding: 0px 10px 0px 10px;
+            width: 50%;
+            margin-left:25%;
+            margin-right:25%;
+            margin-top: 5%;
+            margin-bottom: 0%;
+            border-radius: 15px;
+
+        }
+        .block3{
+            background-color: black;
+            
+            opacity: .8;
+            border: 1px solid black;
+            padding: 0px 10px 0px 0px;
+            width: 80%;
+            margin-left:10%;
+            margin-right:10%;
+            margin-top: 5%;
+            margin-bottom: 0%;
+            border-radius: 15px;
+
+        }
+        #about-title{
+            margin-top:50px;
+            margin-bottom:25px;
+        }
+        #portfolio-title{
+            
         }
     </style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div class="container">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <h1 class="fancy-font">Justis Corbett Designs</h1>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#Portfolio">Portfolio</a></li>
+<body id="splash" data-spy="scroll" data-target="#navContainer" data-offset="50" >
+    <div  class="container-fluid mainbg" id="navContainer">
+        
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+          <div class="container-fluid" >
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                 </button>
+                <a href="#splash" class="navbar-brand fancy-font">Justis Corbett Designs</a>
             </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="pull-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+            </div>
+          </div>
         </nav>
+      <div  class="parallax">
+       <section  class="splashbg">
+        <div class="container-fluid">
+          <div class="block text-center">
+           <h1 class="name-font">Justis Corbett</h1>
+            <h3 class="motto-font">Designs</h3>
+              </div>
+            <div class="btnList text-center">
+                <a class="btn btn-default" href="https://github.com/JustisCorbett">GitHub</a>
+                <a class="btn btn-default" href="https://www.youtube.com/channel/UCcV-Zeh-RxeQiYszA9gC6hA">Youtube</a>
+                <a class="btn btn-default" href="https://soundcloud.com/terratekk">Soundcloud</a>
+                <a class="btn btn-default" href="https://www.facebook.com/justis.corbett.1">Facebook</a>
+                
+            </div>
+          
+        </div>
+       </section>
+      </div>
+        <div id="about" class="container-fluid parallax3">
+         <section  class="aboutbg">
+            <div class="block2 text-center row ">
+                <h2 id="about-title" class="name-font">About Me</h2>
+                
+            </div>
+             <div class="block3">
+                    <h4 class="about-font text-center" style="margin-bottom: 50px;">I am a <span style="font-weight: 500; font-size:3vw;">Self-Taught</span> Graphic Designer, Website Designer, Front-End Developer, Game Designer, Game Programmer, Video Editor, and Music Producer based in Vernal, Utah.</h4>
+                    <h4 class="about-font text-center" style="margin-bottom: 50px;">I am always striving to improve my skills and learn new things in order to create the best experiences I possibly can.</h4>
+                </div>
+         </section>
+        </div>
+        <div class="container-fluid parallax2">
+        <section id="portfolio" class="portfoliobg">
+            <div class="block2 text-center row ">
+                <h2 id="portfolio-title" class="name-font">Portfolio</h2>
+            </div>
+        </section>
+        </div>
+        <div id="contact" class="container-fluid parallax4">
+        <section  class="contactbg">
+            <div class="block2 text-center row ">
+                <h2 id="contact-title" class="name-font">Contact Me</h2>
+            </div>
+        </section>
+        </div>
+        <div class="text-center">
+        <footer>
+            © 2017 Justis Corbett All Rights Reserved
+        </footer>
+            </div>
     </div>
 </body>
 </html>
