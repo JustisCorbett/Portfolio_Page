@@ -24,10 +24,13 @@
             font-weight: 500;
             color: white;
             position:relative;
+            height: 100%;
+            font-size: 1.5vw;
+            
         }
         .parallax{
             background-image: url("https://c1.staticflickr.com/6/5541/9467318028_34a77f668b_k.jpg");
-            height: 625px;
+            height: 100vh;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -37,7 +40,7 @@
         }
         .parallax2{
             background-image: url("https://c1.staticflickr.com/8/7354/16239715270_6a40e20337_b.jpg");
-            height: 675px;
+            height: 100vh;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -46,7 +49,7 @@
         }
         .parallax3{
             background-image: url("https://c1.staticflickr.com/4/3742/20176124030_4f30494dc0_b.jpg");
-            height: 700px;
+            height: 100vh;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -55,7 +58,7 @@
         }
         .parallax4{
             background-image: url("https://c1.staticflickr.com/8/7367/27382526164_823330b31f_h.jpg");
-            height: 725px;
+            height: 100vh;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -68,7 +71,7 @@
         .fancy-font{
             font-family: "Pacifico", serif;
             font-weight: 200;
-            font-size: 1.5vw;
+            font-size: 2vw;
             color: white;
         }
         .name-font{
@@ -97,22 +100,22 @@
         
         .splashbg {
             
-            height: 650px;
+            height: 100vh;
             padding:0px;
             
         }
         .aboutbg{
-            height: 700px;
+            height: 100vh;
             padding:0px;
             
         }
         .portfoliobg{
-            height: 750px;
-            padding:50px 0px 0px 0px;
+            height: 100vh;
+            padding:0px 0px 0px 0px;
             
         }
         .contactbg{
-            height: 700px;
+            height: 100vh;
             padding:0px;
         }
         h1 {
@@ -165,6 +168,17 @@
             border-radius: 15px;
 
         }
+        .blockin{
+            padding: 0px 10px 0px 0px !important;
+            background-color: black;
+            margin-top:1% !important;
+            opacity: 0.8;
+            border: 1px solid black;
+            border-radius: 15px;
+            width:45%;
+            margin-left:2.5%;
+            margin-right:2.5%;
+        }
         #about-title{
             margin-top:50px;
             margin-bottom:25px;
@@ -208,6 +222,7 @@
             <div class="btnList text-center">
                 <a class="btn btn-default" href="https://github.com/JustisCorbett">GitHub</a>
                 <a class="btn btn-default" href="https://www.youtube.com/channel/UCcV-Zeh-RxeQiYszA9gC6hA">Youtube</a>
+                <a class="btn btn-default" href="https://justis-corbett.itch.io/">itch.io</a>
                 <a class="btn btn-default" href="https://soundcloud.com/terratekk">Soundcloud</a>
                 <a class="btn btn-default" href="https://www.facebook.com/justis.corbett.1">Facebook</a>
                 
@@ -228,10 +243,40 @@
                 </div>
          </section>
         </div>
-        <div class="container-fluid parallax2">
-        <section id="portfolio" class="portfoliobg">
+        <div id="portfolio" class="container-fluid parallax2">
+        <section  class="portfoliobg overflow:hidden">
             <div class="block2 text-center row ">
                 <h2 id="portfolio-title" class="name-font">Portfolio</h2>
+            </div>
+            <div class="col-md-6 col-xs-12 text-center blockin overflow:hidden">
+                <h3 class="motto-font">Websites</h3>
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="..." alt="..."/>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="..." alt="..."/>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="..." alt="..."/>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="..." alt="..."/>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 text-center blockin">
+                <h3 class="motto-font">Games</h3>
+                <div class="">
+                <iframe class="" src="https://itch.io/embed/141789?bg_color=222222&amp;fg_color=eeeeee&amp;link_color=5c9ffa&amp;border_color=363636" width="180" height="140"></iframe>
+            
+                </div>
             </div>
         </section>
         </div>
